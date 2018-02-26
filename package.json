@@ -1,6 +1,6 @@
 {
   "name": "react-pagination",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple react library for pagination",
   "main": "build/index.js",
   "scripts": {
@@ -62,8 +62,12 @@
     "react-dom": ">=0.14"
   },
   "jest": {
-    "collectCoverageFrom": ["src/**/*.{js,jsx,mjs}"],
-    "setupFiles": ["<rootDir>/config/polyfills.js"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
       "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
@@ -73,10 +77,11 @@
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)":
-        "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
-    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
@@ -91,7 +96,9 @@
     ]
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
