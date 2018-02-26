@@ -2,6 +2,10 @@
 
 Simple react pagination library.
 
+## Demo
+
+[https://isaurssaurav.github.io/react-pagination/](https://isaurssaurav.github.io/react-pagination/)
+
 ## Getting Started
 
 Install dependencies
