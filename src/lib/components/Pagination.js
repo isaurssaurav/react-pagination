@@ -63,7 +63,6 @@ export default class ReactPagination extends React.Component {
             nextProps.currentPage == nextProps.totalPages - 1 ||
             nextProps.currentPage == nextProps.totalPages
           ) {
-            debugger;
             this.setState({ showEllipis: false });
           } else {
             this.setState({ showEllipis: true });
@@ -104,10 +103,9 @@ export default class ReactPagination extends React.Component {
   };
   showLastPagi = () => {
     if (this.props.currentPage !== this.props.totalPages) {
-      debugger;
       return (
         <a
-          class={this.isactive(this.props.totalPages) ? "is-active" : ""}
+          className={this.isactive(this.props.totalPages) ? "is-active" : ""}
           onClick={() => {
             this.changeCurrentPage(this.props.totalPages);
           }}
@@ -138,16 +136,17 @@ export default class ReactPagination extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <h1>React Pagination</h1>
-        <div class={this.props.theme + " pagination"}>
+        <div className={this.props.theme + " pagination"}>
           <ul>
             {this.showPrev()}
             {this.props.totalPages <= 5 ? (
-              this.state.firstThreeArray.map(no => {
+              this.state.firstThreeArray.map((no, index) => {
                 return (
                   <a
-                    class={this.isactive(no) ? "is-active" : ""}
+                    key={index}
+                    className={this.isactive(no) ? "is-active" : ""}
                     onClick={() => {
                       this.changeCurrentPage(no);
                     }}
@@ -158,10 +157,11 @@ export default class ReactPagination extends React.Component {
               })
             ) : (
               <React.Fragment>
-                {this.state.firstThreeArray.map(no => {
+                {this.state.firstThreeArray.map((no, index) => {
                   return (
                     <a
-                      class={this.isactive(no) ? "is-active" : ""}
+                      key={index}
+                      className={this.isactive(no) ? "is-active" : ""}
                       onClick={() => {
                         this.changeCurrentPage(no);
                       }}
