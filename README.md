@@ -6,18 +6,41 @@ Simple react pagination library made with https://github.com/DimitriMikadze/crea
 
 Install dependencies
 
-`npm install` or `yarn install`
+`npm install react-pagination-library`
 
-Start development server
+## Uses
 
-`npm start` or `yarn start`
+```jsx
+import React from "react";
+import Pagination from "react-pagination-library";
 
-Runs the demo app in development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+// const App = () => (
 
-## Library files
-
-All library files are located inside `src/lib`
+class App extends React.Component {
+  state = {
+    currentPage: 1
+  };
+  changeCurrentPage = numPage => {
+    this.setState({ currentPage: numPage });
+    //fetch a data
+    //or update a query to get data
+  };
+  render() {
+    return (
+      <div>
+        <Pagination
+          currentPage={this.state.currentPage}
+          totalPages={10}
+          changeCurrentPage={this.changeCurrentPage}
+          theme="bottom-border"
+        />
+        <h2>current Page:{this.state.currentPage}</h2>
+      </div>
+    );
+  }
+}
+export default App;
+```
 
 ## Demo app
 
@@ -26,17 +49,3 @@ Is located inside `src/demo` directory, here you can test your library while dev
 ## Testing
 
 `npm run test` or `yarn run test`
-
-## Build library
-
-`npm run build` or `yarn run build`
-
-Produces production version of library under the `build` folder.
-
-## Publish library
-
-`npm publish`
-
-## Example library built with this starter kit
-
-https://github.com/DimitriMikadze/react-under-construction

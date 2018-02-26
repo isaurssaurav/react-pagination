@@ -1,5 +1,5 @@
 {
-  "name": "react-pagination",
+  "name": "react-pagination-library",
   "version": "0.1.1",
   "description": "Simple react library for pagination",
   "main": "build/index.js",
