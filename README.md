@@ -1,6 +1,6 @@
 # React-pagination
 
-Simple react pagination library made with https://github.com/DimitriMikadze/create-react-library.git
+Simple react pagination library.
 
 ## Getting Started
 
@@ -41,6 +41,18 @@ class App extends React.Component {
 }
 export default App;
 ```
+
+## Option/Props
+
+* `currentPage : current page in pagination`
+* `totalPages : Total page in data`
+* `changeCurrentPage : call when click in any button in pagination. Returns clicked button's number`
+* `theme : theme for pagiantion. Choose from following`
+  * border-bottom
+  * square-fill
+  * square-i (default)
+  * circle
+  * square
 
 ## Demo app
 
