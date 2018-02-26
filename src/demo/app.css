@@ -1,0 +1,94 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+li,
+a {
+  font-size: 14px;
+}
+
+/* GRID */
+
+.twelve {
+  width: 100%;
+}
+.eleven {
+  width: 91.53%;
+}
+.ten {
+  width: 83.06%;
+}
+.nine {
+  width: 74.6%;
+}
+.eight {
+  width: 66.13%;
+}
+.seven {
+  width: 57.66%;
+}
+.six {
+  width: 49.2%;
+}
+.five {
+  width: 40.73%;
+}
+.four {
+  width: 32.26%;
+}
+.three {
+  width: 23.8%;
+}
+.two {
+  width: 15.33%;
+}
+.one {
+  width: 6.866%;
+}
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+  margin-left: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
