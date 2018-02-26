@@ -13,6 +13,7 @@ Install dependencies
 ```jsx
 import React from "react";
 import Pagination from "react-pagination-library";
+import "react-pagination-library/build/css/index.css"; //for css
 
 class App extends React.Component {
   state = {
