@@ -136,13 +136,26 @@ export default class ReactPagination extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <h1>React Pagination</h1>
-        <div className={this.props.theme + " pagination"}>
-          <ul>
-            {this.showPrev()}
-            {this.props.totalPages <= 5 ? (
-              this.state.firstThreeArray.map((no, index) => {
+      <div className={this.props.theme + " pagination"}>
+        <ul>
+          {this.showPrev()}
+          {this.props.totalPages <= 5 ? (
+            this.state.firstThreeArray.map((no, index) => {
+              return (
+                <a
+                  key={index}
+                  className={this.isactive(no) ? "is-active" : ""}
+                  onClick={() => {
+                    this.changeCurrentPage(no);
+                  }}
+                >
+                  <li>{no}</li>
+                </a>
+              );
+            })
+          ) : (
+            <React.Fragment>
+              {this.state.firstThreeArray.map((no, index) => {
                 return (
                   <a
                     key={index}
@@ -154,30 +167,14 @@ export default class ReactPagination extends React.Component {
                     <li>{no}</li>
                   </a>
                 );
-              })
-            ) : (
-              <React.Fragment>
-                {this.state.firstThreeArray.map((no, index) => {
-                  return (
-                    <a
-                      key={index}
-                      className={this.isactive(no) ? "is-active" : ""}
-                      onClick={() => {
-                        this.changeCurrentPage(no);
-                      }}
-                    >
-                      <li>{no}</li>
-                    </a>
-                  );
-                })}
-                {this.showEllipsis()}
+              })}
+              {this.showEllipsis()}
 
-                {this.showLastPagi()}
-              </React.Fragment>
-            )}
-            {this.showNext()}
-          </ul>
-        </div>
+              {this.showLastPagi()}
+            </React.Fragment>
+          )}
+          {this.showNext()}
+        </ul>
       </div>
     );
   }
