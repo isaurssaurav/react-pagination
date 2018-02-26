@@ -6,15 +6,13 @@ Simple react pagination library.
 
 Install dependencies
 
-`npm install react-pagination-library`
+`npm install react-pagination-library` or `npm install react-pagination-library --save`
 
 ## Uses
 
 ```jsx
 import React from "react";
 import Pagination from "react-pagination-library";
-
-// const App = () => (
 
 class App extends React.Component {
   state = {
