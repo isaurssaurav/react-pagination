@@ -45,26 +45,14 @@ class App extends React.Component {
 export default App;
 ```
 
-## Option/Props
-
-* `currentPage : current page in pagination`
-* `totalPages : Total page in data`
-* `changeCurrentPage : call when click in any button in pagination. Returns clicked button's number`
-* `theme : theme for pagiantion. Choose from following`
-  * border-bottom
-  * square-fill
-  * square-i (default)
-  * circle
-  * square
-
 ## Params
 
-Name | Type | Default | Description
---- | --- | --- | --- |
-`totalPages` | Number |`10` | **Required.** Total number of pages which you are going to display
-`currentPage` | Number |`1` | **Required.** Active page number
-`changeCurrentPage` | Function | | **Required.** Page change handler. Receive  current pageNumber as arg
-`theme` | string | `sqaure-i` |  Theme 
+| Name                | Type     | Default    | Description                                                          |
+| ------------------- | -------- | ---------- | -------------------------------------------------------------------- |
+| `totalPages`        | Number   | `10`       | **Required.** Total number of pages which you are going to display   |
+| `currentPage`       | Number   | `1`        | **Required.** Active page number                                     |
+| `changeCurrentPage` | Function |            | **Required.** Page change handler. Receive current pageNumber as arg |
+| `theme`             | string   | `sqaure-i` | Themes : border-bottom, square-fill, square-i, circle,square         |
 
 ## Testing
 
