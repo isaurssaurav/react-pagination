@@ -180,7 +180,7 @@ export default class ReactPagination extends React.Component {
   }
 }
 ReactPagination.defaultProps = {
-  theme: "square-i",
+  theme: "default",
   currentPage: 1,
   totalPages: 15
 };

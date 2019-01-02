@@ -66,6 +66,13 @@ class App extends React.Component {
             changeCurrentPage={this.changeCurrentPage}
             theme="square"
           />
+          <h3>Deafult</h3>
+          <Pagination
+            currentPage={this.state.currentPage}
+            totalPages={10}
+            changeCurrentPage={this.changeCurrentPage}
+            theme="default"
+          />
         </div>
       </div>
     );

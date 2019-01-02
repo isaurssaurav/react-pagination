@@ -47,12 +47,12 @@ export default App;
 
 ## Params
 
-| Name                | Type     | Default    | Description                                                          |
-| ------------------- | -------- | ---------- | -------------------------------------------------------------------- |
-| `totalPages`        | Number   | `10`       | **Required.** Total number of pages which you are going to display   |
-| `currentPage`       | Number   | `1`        | **Required.** Active page number                                     |
-| `changeCurrentPage` | Function |            | **Required.** Page change handler. Receive current pageNumber as arg |
-| `theme`             | string   | `sqaure-i` | Themes : border-bottom, square-fill, square-i, circle,square         |
+| Name                | Type     | Default   | Description                                                          |
+| ------------------- | -------- | --------- | -------------------------------------------------------------------- |
+| `totalPages`        | Number   | `10`      | **Required.** Total number of pages which you are going to display   |
+| `currentPage`       | Number   | `1`       | **Required.** Active page number                                     |
+| `changeCurrentPage` | Function |           | **Required.** Page change handler. Receive current pageNumber as arg |
+| `theme`             | string   | `default` | Themes : default,border-bottom, square-fill, square-i, circle,square |
 
 ## Testing
 
