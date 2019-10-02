@@ -1,4 +1,6 @@
 
+![npm](https://img.shields.io/npm/dt/react-pagination-library)
+
 # **_IMPORTANT NOTE_**
 **This repository is _DEPRECATED_. Please use [react-pagination-js](https://github.com/isaurssaurav/react-pagination-js) instead which has more added feature and is tested well.**
 
